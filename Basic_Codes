@@ -1,0 +1,60 @@
+# To calculate the length of the string 
+str1= "Chela"
+
+str2= "Hai"
+final_str= str1 + str2;
+
+print(final_str)
+print(len(final_str))
+
+#taking input and then calculating the length
+name = input("Enter your name - ")
+print("Length of the name - ",len(name))
+
+#Finding grades of student in a class
+marks = int(input("please enter your marks- "))
+
+if(marks>=90):
+    print("A")
+elif(marks<90 and marks>=80):
+        print("B")
+elif(marks<80 and marks>=70):
+    print("C")
+else:
+     print("D")
+
+#List working
+marks = [12, 13, 14, 15, 16]
+print(type(marks))
+print(marks[2])
+
+#To enter 3 movies and adding them into the list
+movies = []
+mov1= input("Enter your first movie- ")
+mov2= input("Enter your second movie- ")
+mov3 = input("Enter your third movie- ")
+
+movies.append(mov1)
+movies.append(mov2)
+movies.append(mov3)
+
+print(movies)
+
+#to search whether the list is pallindrome or not
+value = [1, 2, 3, 2, 1]
+
+value2 = value.copy()
+
+value2.reverse()
+
+if(value == value2):
+    print("This sequence is pallindrome")
+else:
+    print("This is not a pallindrome")
+
+#count the total number of occurence
+value = ("A", "B", "A", "C", "A", "D", "B")
+
+print(value.count("A"))
+
+
