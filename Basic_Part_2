@@ -1,0 +1,30 @@
+#Dictionary 
+Dictionary ={
+    "table" : ["A piece of furniture", "list of facts and figures"],
+    
+    "cat" : "a small animal"
+}
+
+print(Dictionary)
+-----------------------------------------------------------------------------------
+#Number of classroom for each subject
+Subject= {
+    "Maths", "Science", "Maths", "English", "S.St", "Hindi", "C++",
+    "Maths", "Science", "Maths"
+}
+print(len(Subject))
+--------------------------------------------------------------------------------
+#Enter something in dictionary
+marks = {}
+
+x = input("Enter the marks of physics- ")
+marks.update({"Physics" : x})
+
+y = input("Enter the marks of chemistry- ")
+marks.update({"Chemistry" : y})
+
+z = input("Enter the marks of maths- ")
+marks.update({"Maths" : z})
+
+print(marks)
+----------------------------------------------------------------------
