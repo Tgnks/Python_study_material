@@ -1,0 +1,21 @@
+#How to read a file
+f = open("demo.txt", "r")
+data = f.read()
+print(data)
+f.close()#as a responsible programmer alwasya close the program.
+
+#demo.txt file 
+I am Naveen Kumar Singh
+I work as a analyst in cognizant.
+----------------------------------------------------------------------------------
+# to find in a file how many are even numbers
+count =0
+with open("demo.txt", "r") as f:
+    data= f.read()
+    
+    nums = data.split(",")
+    for val in nums:
+        if(int(val)%2 == 0):
+            count = count + 1# -*- coding: latin-1 -*-
+
+print(count)
