@@ -1,0 +1,54 @@
+#Sum of n numbers 
+i = 1
+j =0
+n =7
+#n = input(int("Please the enter the last number- "))
+while i<= n:
+    j =j + i
+    i = i+ 1 
+  
+    
+    print ("The sume all number till n", j)
+-----------------------------------------------------------------------------------------
+#Calculate the length of the list
+cities =["Delhi", "Kolkata", "Mumbai", "Banglore", "indore", "Patna"]
+heroes= ["ironman", "Batman", "thor", "saktiman", "Antman"]
+
+def Cal_Length(list):
+    print(len(list))
+
+Cal_Length(cities)
+Cal_Length(heroes)
+
+-----------------------------------------------------------------------------
+#recursion 1st
+def show(n):
+    if(n == 0):
+        return 
+    print(n)
+    show(n-1)
+    print("End")
+    
+    
+show(3)
+---------------------------------------------------------------------------
+#Factorial of n numbers
+def factorial(n):
+    if(n == 0 or n ==1):
+        return 1
+    else:
+        return n* factorial(n-1)
+        
+print(factorial(6))
+---------------------------------------------------------------------
+#Print the item in the list
+def print_list(list, idx=0):
+    if(idx == len(list)):
+        return
+    print(list[idx])
+    print_list(list, idx+1)
+
+fruit =["Mango", "Oranges", "Banana", "PineApple", "Sugarcane"]
+    
+print_list(fruit)
+----------------------------------------------------------------------------------
